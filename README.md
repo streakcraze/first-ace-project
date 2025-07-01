@@ -8,6 +8,7 @@ It supports **COBOL** and **XML** message formats via data models defined in a s
 
 ## 📂 Project Structure
 
+```
 ├── RouteComplaint/           # Main application with message flow and library references  
 │  
 ├── ComplaintDataModels/      # Shared library with DFDL schema (from COBOL Copybook) and XML schema model  
@@ -15,3 +16,4 @@ It supports **COBOL** and **XML** message formats via data models defined in a s
 ├── DB_DATA_PROJECT/          # Database definition for use in DB node  
 │  
 └── DefaultPolicies/          # Policy project for JDBC connection configuration  
+```
