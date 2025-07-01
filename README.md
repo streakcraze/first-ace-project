@@ -4,7 +4,6 @@ This repository contains a fully implemented IBM App Connect Enterprise (ACE) so
 
 📂 Project Structure
 
-.  
 ├── RouteComplaint/            # Main application with message flow and library references  
 │  
 ├── ComplaintDataModels/       # Shared library with DFDL schema generated from COBOL Copybook and XML schema model  
