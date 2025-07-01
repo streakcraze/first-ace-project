@@ -1,7 +1,13 @@
-📨 MQ and Database Integration in IBM App Connect Enterprise
-This repository contains a fully implemented IBM App Connect Enterprise (ACE) solution that processes messages from IBM MQ, transforms them using the Graphical Data Mapping editor, and stores the result in IBM DB2. It supports COBOL and XML message formats via data models defined in a shared library, and uses external policy definitions for JDBC database connectivity.
+# 📨 MQ and Database Integration in IBM App Connect Enterprise
 
-📂 Project Structure
+This repository contains a fully implemented **IBM App Connect Enterprise (ACE)** solution that processes messages from **IBM MQ**, transforms them using the **Graphical Data Mapping editor**, and stores the result in **IBM DB2**.
+
+It supports **COBOL** and **XML** message formats via data models defined in a shared library, and uses external policy definitions for **JDBC database connectivity**.
+
+---
+
+## 📂 Project Structure
+
 
 ├── RouteComplaint/           # Main application with message flow and library references  
 │  
