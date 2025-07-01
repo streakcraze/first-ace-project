@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLAccessControl="http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore">
+  <LUW:LUWDatabase xmi:id="_0HeTIFMoEfCZjohW8l0gcA" name="MSGSTORE" vendor="DB2 UDB" version="V10.6" schemas="_0LIrIFMoEfCZjohW8l0gcA" authorizationIds="_0LIrKFMoEfCZjohW8l0gcA" federated="true">
+    <eAnnotations xmi:id="_0HeTIVMoEfCZjohW8l0gcA" source="ConnectionURI">
+      <details xmi:id="_0HeTIlMoEfCZjohW8l0gcA" key="ConnectionKey" value="MSGSTORE"/>
+    </eAnnotations>
+  </LUW:LUWDatabase>
+  <DB2Model:DB2Schema xmi:id="_0LIrIFMoEfCZjohW8l0gcA" name="ADMINISTRATOR" tables="_0LIrIVMoEfCZjohW8l0gcA" database="_0HeTIFMoEfCZjohW8l0gcA" owner="_0LIrKFMoEfCZjohW8l0gcA"/>
+  <LUW:LUWTable xmi:id="_0LIrIVMoEfCZjohW8l0gcA" name="COMPLAIN" schema="_0LIrIFMoEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_0LIrIlMoEfCZjohW8l0gcA" name="MSGID" inlineLength="164">
+      <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_0LIrI1MoEfCZjohW8l0gcA" name="BLOB" primitiveType="BINARY_LARGE_OBJECT" length="1048576"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_0LIrJFMoEfCZjohW8l0gcA" name="RECEIVED">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_0LIrJVMoEfCZjohW8l0gcA" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_0LIrJlMoEfCZjohW8l0gcA" name="MESSAGE" inlineLength="164">
+      <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_0LIrJ1MoEfCZjohW8l0gcA" name="BLOB" primitiveType="BINARY_LARGE_OBJECT" length="1048576"/>
+    </columns>
+  </LUW:LUWTable>
+  <SQLAccessControl:User xmi:id="_0LIrKFMoEfCZjohW8l0gcA" name="ADMINISTRATOR" description="" ownedSchema="_0LIrIFMoEfCZjohW8l0gcA" Database="_0HeTIFMoEfCZjohW8l0gcA"/>
+</xmi:XMI>

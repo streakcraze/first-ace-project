@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" xmlns:map="default" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0">
+    <input path="mbsharedlib://ComplaintDataModels/COMPLAINT_IN.xsd" var="var"/>
+    <input path="db:database(/SAMPLE.dbm,SAMPLE,db:schema-tables(ARNOLD,EMPLOYEE))" var="SAMPLE"/>
+    <output path="mbsharedlib://ComplaintDataModels/COMPLAINT_OUT.xsd"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="DB_Mapping">
+        <input path="$var/mb:msg(CUSTOMERCOMPLAINT,assembly,DFDL,Properties)" var="ComIbmMessageAssembly_CUSTOMERCOMPLAINT"/>
+        <input path="$SAMPLE/db:select(fn:false(),ResultSet(ARNOLD/EMPLOYEE/FIRSTNME,ARNOLD/EMPLOYEE/LASTNAME,ARNOLD/EMPLOYEE/PHONENO),db:where(&quot;EMPLOYEE.WORKDEPT = 'C01' AND EMPLOYEE.JOB = 'MANAGER'&quot;))" var="dbselect"/>
+        <output path="mb:msg(Complaint_Out,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_Complaint_Out"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/Properties"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Properties"/>
+            <override>
+                <assign value="{ComplaintDataModels}">
+                    <output path="$ComIbmMessageAssembly_Complaint_Out/Properties/MessageSet"/>
+                </assign>
+            </override>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/VERSION"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Version"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_ADDRESS/TOWN"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Address/Town"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_ADDRESS/ZIP"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Address/Zip"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_ADDRESS/COUNTRY"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Address/Country"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_NAME/N_FIRST"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Name/First"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_NAME/N_LAST"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Name/Last"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/CUSTOMER_ADDRESS/A_LINE"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Customer/Address/Line"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/COMPLAINT/C_TYPE"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Complaint/Type"/>
+        </move>
+        <move automap="true">
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/COMPLAINT/C_TEXT"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Complaint/Text"/>
+        </move>
+        <move>
+            <input path="$ComIbmMessageAssembly_CUSTOMERCOMPLAINT/CUSTOMERCOMPLAINT/COMPLAINT/C_REF"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Complaint/Reference"/>
+        </move>
+        <select ref="dbselect">
+            <input path="$dbselect/ResultSet[1]" var="ResultSet"/>
+            <output path="$ComIbmMessageAssembly_Complaint_Out/Complaint_Out/Admin"/>
+            <move>
+                <input path="$ResultSet/ARNOLD/EMPLOYEE/FIRSTNME"/>
+                <output path="Manager/FirstName"/>
+            </move>
+            <move>
+                <input path="$ResultSet/ARNOLD/EMPLOYEE/LASTNAME"/>
+                <output path="Manager/LastName"/>
+            </move>
+            <move>
+                <input path="$ResultSet/ARNOLD/EMPLOYEE/PHONENO"/>
+                <output path="Manager/Phone"/>
+            </move>
+        </select>
+    </mappingDeclaration>
+</mappingRoot>

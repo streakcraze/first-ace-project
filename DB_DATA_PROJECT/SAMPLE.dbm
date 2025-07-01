@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLAccessControl="http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLExpressions="http:///org/eclipse/datatools/modelbase/sql/expressions.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:SQLStatements="http:///org/eclipse/datatools/modelbase/sql/statements.ecore">
+  <LUW:LUWDatabase xmi:id="_tYjrcFMlEfCZjohW8l0gcA" name="SAMPLE" vendor="DB2 UDB" version="V10.6" schemas="_tYvRoFMlEfCZjohW8l0gcA _tYvR9FMlEfCZjohW8l0gcA" federated="true">
+    <eAnnotations xmi:id="_tYjrcVMlEfCZjohW8l0gcA" source="ConnectionURI">
+      <details xmi:id="_tYjrclMlEfCZjohW8l0gcA" key="ConnectionKey" value="SAMPLE1"/>
+    </eAnnotations>
+  </LUW:LUWDatabase>
+  <DB2Model:DB2Schema xmi:id="_tYvRoFMlEfCZjohW8l0gcA" name="ARNOLD" triggers="_tYvRoVMlEfCZjohW8l0gcA _tYvRwVMlEfCZjohW8l0gcA" indices="_tYvRzlMlEfCZjohW8l0gcA _tYvR5FMlEfCZjohW8l0gcA _tYvR51MlEfCZjohW8l0gcA _tYvSAlMlEfCZjohW8l0gcA _tYvSBVMlEfCZjohW8l0gcA _tYvSCFMlEfCZjohW8l0gcA _tYvSC1MlEfCZjohW8l0gcA _tYvSDlMlEfCZjohW8l0gcA _tY6Q5VMlEfCZjohW8l0gcA _tY6RDFMlEfCZjohW8l0gcA _tY6RDlMlEfCZjohW8l0gcA _tZBllFMlEfCZjohW8l0gcA _tZBlllMlEfCZjohW8l0gcA _tZDasFMlEfCZjohW8l0gcA _tZDas1MlEfCZjohW8l0gcA _tZDatlMlEfCZjohW8l0gcA _tY4bpVMlEfCZjohW8l0gcA _tY4bp1MlEfCZjohW8l0gcA _tY4bqlMlEfCZjohW8l0gcA _tZDaxVMlEfCZjohW8l0gcA _tZFP4FMlEfCZjohW8l0gcA _tZFP4lMlEfCZjohW8l0gcA _tY6QwlMlEfCZjohW8l0gcA _tY6QxFMlEfCZjohW8l0gcA _tY6Qx1MlEfCZjohW8l0gcA _tY6QylMlEfCZjohW8l0gcA _tY6Q4FMlEfCZjohW8l0gcA" tables="_tYvR0FMlEfCZjohW8l0gcA _tYvR6VMlEfCZjohW8l0gcA _tZFP5FMlEfCZjohW8l0gcA _tYvR-VMlEfCZjohW8l0gcA _tY6Q51MlEfCZjohW8l0gcA _tY6REFMlEfCZjohW8l0gcA _tY3NcFMlEfCZjohW8l0gcA _tZEo0FMlEfCZjohW8l0gcA _tZBlgFMlEfCZjohW8l0gcA _tZCzoFMlEfCZjohW8l0gcA _tZDauFMlEfCZjohW8l0gcA _tZFP71MlEfCZjohW8l0gcA _tZGeAFMlEfCZjohW8l0gcA _tY4bkFMlEfCZjohW8l0gcA _tY4btlMlEfCZjohW8l0gcA _tZDayVMlEfCZjohW8l0gcA _tY6RSVMlEfCZjohW8l0gcA _tYvSHFMlEfCZjohW8l0gcA _tZGeEVMlEfCZjohW8l0gcA _tYvRrlMlEfCZjohW8l0gcA _tZGeHlMlEfCZjohW8l0gcA _tY6Q11MlEfCZjohW8l0gcA" sequences="_tZHsIFMlEfCZjohW8l0gcA" database="_tYjrcFMlEfCZjohW8l0gcA" owner="_tY6Q5FMlEfCZjohW8l0gcA"/>
+  <DB2Model:DB2Trigger xmi:id="_tYvRoVMlEfCZjohW8l0gcA" name="MIN_SALARY" schema="_tYvRoFMlEfCZjohW8l0gcA" subjectTable="_tYvRrlMlEfCZjohW8l0gcA" actionGranularity="ROW" actionTime="BEFORE" insertType="true" newRow="newstaff">
+    <eAnnotations xmi:id="_tYvRolMlEfCZjohW8l0gcA" source="CreateTime">
+      <details xmi:id="_tYvRo1MlEfCZjohW8l0gcA" key="CreateTime" value="2025-04-24 09:13:45.994002"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRpFMlEfCZjohW8l0gcA" source="AlterTime">
+      <details xmi:id="_tYvRpVMlEfCZjohW8l0gcA" key="AlterTime" value="2025-04-24 09:13:45.994002"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRplMlEfCZjohW8l0gcA" source="extendedOptions">
+      <details xmi:id="_tYvRp1MlEfCZjohW8l0gcA" key="debug" value="false"/>
+      <details xmi:id="_tYvRqFMlEfCZjohW8l0gcA" key="built" value="true"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRqVMlEfCZjohW8l0gcA" source="VALID">
+      <details xmi:id="_tYvRqlMlEfCZjohW8l0gcA" key="VALID" value="Y"/>
+    </eAnnotations>
+    <dependencies xmi:id="_tYvRq1MlEfCZjohW8l0gcA" targetEnd="_tYvRrlMlEfCZjohW8l0gcA"/>
+    <actionStatement xsi:type="SQLStatements:SQLStatementDefault" xmi:id="_tYvRrFMlEfCZjohW8l0gcA" SQL="BEGIN ATOMIC SET newstaff.salary = CASE WHEN newstaff.job = 'Mgr' AND newstaff.salary &lt; 17000.00 THEN 17000.00 WHEN newstaff.job = 'Sales' AND newstaff.salary &lt; 14000.00 THEN 14000.00 WHEN newstaff.job = 'Clerk' AND newstaff.salary &lt; 10000.00 THEN 10000.00 ELSE newstaff.salary END; END"/>
+    <when xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_tYvRrVMlEfCZjohW8l0gcA" SQL=""/>
+  </DB2Model:DB2Trigger>
+  <LUW:LUWTable xmi:id="_tYvRrlMlEfCZjohW8l0gcA" name="STAFF" schema="_tYvRoFMlEfCZjohW8l0gcA" triggers="_tYvRoVMlEfCZjohW8l0gcA _tYvRwVMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRr1MlEfCZjohW8l0gcA" name="ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvRsFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRsVMlEfCZjohW8l0gcA" name="NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvRslMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="9">
+        <eAnnotations xmi:id="_tYvRs1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvRtFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRtVMlEfCZjohW8l0gcA" name="DEPT">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvRtlMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRt1MlEfCZjohW8l0gcA" name="JOB">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvRuFMlEfCZjohW8l0gcA" name="CHAR" length="5">
+        <eAnnotations xmi:id="_tYvRuVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvRulMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRu1MlEfCZjohW8l0gcA" name="YEARS">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvRvFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRvVMlEfCZjohW8l0gcA" name="SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tYvRvlMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="7" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvRv1MlEfCZjohW8l0gcA" name="COMM">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tYvRwFMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="7" scale="2"/>
+    </columns>
+  </LUW:LUWTable>
+  <DB2Model:DB2Trigger xmi:id="_tYvRwVMlEfCZjohW8l0gcA" name="DO_NOT_DEL_SALES" schema="_tYvRoFMlEfCZjohW8l0gcA" subjectTable="_tYvRrlMlEfCZjohW8l0gcA" actionGranularity="ROW" actionTime="BEFORE" deleteType="true" oldRow="oldstaff">
+    <eAnnotations xmi:id="_tYvRwlMlEfCZjohW8l0gcA" source="CreateTime">
+      <details xmi:id="_tYvRw1MlEfCZjohW8l0gcA" key="CreateTime" value="2025-04-24 09:13:45.997003"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRxFMlEfCZjohW8l0gcA" source="AlterTime">
+      <details xmi:id="_tYvRxVMlEfCZjohW8l0gcA" key="AlterTime" value="2025-04-24 09:13:45.997003"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRxlMlEfCZjohW8l0gcA" source="extendedOptions">
+      <details xmi:id="_tYvRx1MlEfCZjohW8l0gcA" key="debug" value="false"/>
+      <details xmi:id="_tYvRyFMlEfCZjohW8l0gcA" key="built" value="true"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_tYvRyVMlEfCZjohW8l0gcA" source="VALID">
+      <details xmi:id="_tYvRylMlEfCZjohW8l0gcA" key="VALID" value="Y"/>
+    </eAnnotations>
+    <dependencies xmi:id="_tYvRy1MlEfCZjohW8l0gcA" targetEnd="_tYvRrlMlEfCZjohW8l0gcA"/>
+    <actionStatement xsi:type="SQLStatements:SQLStatementDefault" xmi:id="_tYvRzFMlEfCZjohW8l0gcA" SQL="BEGIN ATOMIC SIGNAL SQLSTATE '75000' ('Sales staff cannot be deleted... see the DO_NOT_DEL_SALES trigger.'); END"/>
+    <when xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_tYvRzVMlEfCZjohW8l0gcA" SQL="oldstaff.job = 'Sales'"/>
+  </DB2Model:DB2Trigger>
+  <LUW:LUWIndex xmi:id="_tYvRzlMlEfCZjohW8l0gcA" name="PK_ACT" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR0FMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvRz1MlEfCZjohW8l0gcA" column="_tYvR0VMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tYvR0FMlEfCZjohW8l0gcA" name="ACT" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tYvRzlMlEfCZjohW8l0gcA _tYvR5FMlEfCZjohW8l0gcA" referencingForeignKeys="_tYvR3VMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR0VMlEfCZjohW8l0gcA" name="ACTNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvR0lMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR01MlEfCZjohW8l0gcA" name="ACTKWD" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvR1FMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tYvR1VMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvR1lMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR11MlEfCZjohW8l0gcA" name="ACTDESC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvR2FMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20">
+        <eAnnotations xmi:id="_tYvR2VMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvR2lMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tYvR21MlEfCZjohW8l0gcA" name="PK_ACT" members="_tYvR0VMlEfCZjohW8l0gcA" ForeignKey="_tYvR3VMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tYvR3FMlEfCZjohW8l0gcA" targetEnd="_tYvRzlMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tYvR3VMlEfCZjohW8l0gcA" name="RPAA" members="_tYvR0VMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tYvR21MlEfCZjohW8l0gcA" referencedTable="_tYvR0FMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tYvR3lMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tYvR31MlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_tYvR4FMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tYvR4VMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tYvR4lMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tYvR41MlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tYvR5FMlEfCZjohW8l0gcA" name="XACT2" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" table="_tYvR0FMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvR5VMlEfCZjohW8l0gcA" column="_tYvR0VMlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tYvR5lMlEfCZjohW8l0gcA" column="_tYvR01MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvR51MlEfCZjohW8l0gcA" name="PK_CATALOG" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR6VMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvR6FMlEfCZjohW8l0gcA" column="_tYvR6lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tYvR6VMlEfCZjohW8l0gcA" name="CATALOG" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tYvR51MlEfCZjohW8l0gcA _tYvR8lMlEfCZjohW8l0gcA _tYvR9VMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR6lMlEfCZjohW8l0gcA" name="NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvR61MlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_tYvR7FMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvR7VMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR7lMlEfCZjohW8l0gcA" name="CATLOG">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tYvR71MlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tYvR8FMlEfCZjohW8l0gcA" name="PK_CATALOG" members="_tYvR6lMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tYvR8VMlEfCZjohW8l0gcA" targetEnd="_tYvR51MlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tYvR8lMlEfCZjohW8l0gcA" name="SQL250424091350250" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvR6VMlEfCZjohW8l0gcA" indexType="XMLREGION" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvR81MlEfCZjohW8l0gcA" column="_tYvR7lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <DB2Model:DB2Schema xmi:id="_tYvR9FMlEfCZjohW8l0gcA" name="SYSIBM" indices="_tYvR8lMlEfCZjohW8l0gcA _tYvR9VMlEfCZjohW8l0gcA _tYvR91MlEfCZjohW8l0gcA _tYvSEFMlEfCZjohW8l0gcA _tYvSElMlEfCZjohW8l0gcA _tYvSFFMlEfCZjohW8l0gcA _tYvSFlMlEfCZjohW8l0gcA _tYvSGFMlEfCZjohW8l0gcA _tYvSGlMlEfCZjohW8l0gcA _tYvSNlMlEfCZjohW8l0gcA _tY3Nd1MlEfCZjohW8l0gcA _tY3NeVMlEfCZjohW8l0gcA _tY3NfFMlEfCZjohW8l0gcA _tY4brVMlEfCZjohW8l0gcA _tY4br1MlEfCZjohW8l0gcA _tY4bsVMlEfCZjohW8l0gcA _tY4bs1MlEfCZjohW8l0gcA _tY6QwFMlEfCZjohW8l0gcA _tY6QzVMlEfCZjohW8l0gcA _tY6Qz1MlEfCZjohW8l0gcA _tY6Q0VMlEfCZjohW8l0gcA _tY6Q01MlEfCZjohW8l0gcA _tY6Q1VMlEfCZjohW8l0gcA _tY6Q4lMlEfCZjohW8l0gcA" database="_tYjrcFMlEfCZjohW8l0gcA" owner="_tY6Q5FMlEfCZjohW8l0gcA"/>
+  <LUW:LUWIndex xmi:id="_tYvR9VMlEfCZjohW8l0gcA" name="SQL250424091350290" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR6VMlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvR9lMlEfCZjohW8l0gcA" column="_tYvR7lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvR91MlEfCZjohW8l0gcA" name="SQL250424091350120" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLREGION" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvR-FMlEfCZjohW8l0gcA" column="_tYvR_lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tYvR-VMlEfCZjohW8l0gcA" name="CUSTOMER" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tYvSAlMlEfCZjohW8l0gcA _tYvSBVMlEfCZjohW8l0gcA _tYvSCFMlEfCZjohW8l0gcA _tYvSC1MlEfCZjohW8l0gcA _tYvSDlMlEfCZjohW8l0gcA _tYvR91MlEfCZjohW8l0gcA _tYvSEFMlEfCZjohW8l0gcA _tYvSElMlEfCZjohW8l0gcA _tYvSFFMlEfCZjohW8l0gcA _tYvSFlMlEfCZjohW8l0gcA _tYvSGFMlEfCZjohW8l0gcA _tYvSGlMlEfCZjohW8l0gcA" referencingForeignKeys="_tYvSL1MlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR-lMlEfCZjohW8l0gcA" name="CID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvR-1MlEfCZjohW8l0gcA" name="BIGINT" primitiveType="BIGINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR_FMlEfCZjohW8l0gcA" name="INFO">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tYvR_VMlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvR_lMlEfCZjohW8l0gcA" name="HISTORY">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tYvR_1MlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tYvSAFMlEfCZjohW8l0gcA" name="PK_CUSTOMER" members="_tYvR-lMlEfCZjohW8l0gcA" ForeignKey="_tYvSL1MlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tYvSAVMlEfCZjohW8l0gcA" targetEnd="_tYvSDlMlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tYvSAlMlEfCZjohW8l0gcA" name="CUST_CID_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/customerinfo/@Cid" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSA1MlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_tYvSBFMlEfCZjohW8l0gcA" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSBVMlEfCZjohW8l0gcA" name="CUST_NAME_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/customerinfo/name" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSBlMlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvSB1MlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="50"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSCFMlEfCZjohW8l0gcA" name="CUST_PHONES_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/customerinfo/phone" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSCVMlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvSClMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="25"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSC1MlEfCZjohW8l0gcA" name="CUST_PHONET_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/customerinfo/phone/@type" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSDFMlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvSDVMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="25"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSDlMlEfCZjohW8l0gcA" name="PK_CUSTOMER" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSD1MlEfCZjohW8l0gcA" column="_tYvR-lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSEFMlEfCZjohW8l0gcA" name="SQL250424091350150" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSEVMlEfCZjohW8l0gcA" column="_tYvR_lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSElMlEfCZjohW8l0gcA" name="SQL250424091350160" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSE1MlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSFFMlEfCZjohW8l0gcA" name="SQL250424091350570" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSFVMlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSFlMlEfCZjohW8l0gcA" name="SQL250424091350590" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSF1MlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSGFMlEfCZjohW8l0gcA" name="SQL250424091350600" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSGVMlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tYvSGlMlEfCZjohW8l0gcA" name="SQL250424091350620" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvR-VMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSG1MlEfCZjohW8l0gcA" column="_tYvR_FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tYvSHFMlEfCZjohW8l0gcA" name="PURCHASEORDER" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tY6QwlMlEfCZjohW8l0gcA _tY6QxFMlEfCZjohW8l0gcA _tY6Qx1MlEfCZjohW8l0gcA _tY6QylMlEfCZjohW8l0gcA _tY6QwFMlEfCZjohW8l0gcA _tY6QzVMlEfCZjohW8l0gcA _tY6Qz1MlEfCZjohW8l0gcA _tY6Q0VMlEfCZjohW8l0gcA _tY6Q01MlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSHVMlEfCZjohW8l0gcA" name="POID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvSHlMlEfCZjohW8l0gcA" name="BIGINT" primitiveType="BIGINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSH1MlEfCZjohW8l0gcA" name="STATUS" nullable="false" defaultValue="'Unshipped'">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvSIFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tYvSIVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvSIlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSI1MlEfCZjohW8l0gcA" name="CUSTID">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tYvSJFMlEfCZjohW8l0gcA" name="BIGINT" primitiveType="BIGINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSJVMlEfCZjohW8l0gcA" name="ORDERDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tYvSJlMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSJ1MlEfCZjohW8l0gcA" name="PORDER">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tYvSKFMlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tYvSKVMlEfCZjohW8l0gcA" name="COMMENTS">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tYvSKlMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="1000">
+        <eAnnotations xmi:id="_tYvSK1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tYvSLFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tYvSLVMlEfCZjohW8l0gcA" name="PK_PURCHASEORDER" members="_tYvSHVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tYvSLlMlEfCZjohW8l0gcA" targetEnd="_tY6QwlMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tYvSL1MlEfCZjohW8l0gcA" name="FK_PO_CUST" members="_tYvSI1MlEfCZjohW8l0gcA" onDelete="CASCADE" uniqueConstraint="_tYvSAFMlEfCZjohW8l0gcA" referencedTable="_tYvR-VMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tYvSMFMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tYvSMVMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tYvSMlMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tYvSM1MlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tYvSNFMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tYvSNVMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tYvSNlMlEfCZjohW8l0gcA" name="SQL250424091347480" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY3NcFMlEfCZjohW8l0gcA" indexType="DIMENSION" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tYvSN1MlEfCZjohW8l0gcA" column="_tY3Nc1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY3NcFMlEfCZjohW8l0gcA" name="EMPMDC" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tYvSNlMlEfCZjohW8l0gcA _tY3Nd1MlEfCZjohW8l0gcA _tY3NeVMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY3NcVMlEfCZjohW8l0gcA" name="EMPNO">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tY3NclMlEfCZjohW8l0gcA" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY3Nc1MlEfCZjohW8l0gcA" name="DEPT">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tY3NdFMlEfCZjohW8l0gcA" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY3NdVMlEfCZjohW8l0gcA" name="DIV">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tY3NdlMlEfCZjohW8l0gcA" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tY3Nd1MlEfCZjohW8l0gcA" name="SQL250424091347460" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY3NcFMlEfCZjohW8l0gcA" indexType="DIMENSION" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY3NeFMlEfCZjohW8l0gcA" column="_tY3NdVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY3NeVMlEfCZjohW8l0gcA" name="SQL250424091347450" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY3NcFMlEfCZjohW8l0gcA" indexType="BLOCK" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY3NelMlEfCZjohW8l0gcA" column="_tY3Nc1MlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tY3Ne1MlEfCZjohW8l0gcA" column="_tY3NdVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY3NfFMlEfCZjohW8l0gcA" name="SQL250424091349980" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLREGION" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY3NfVMlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY4bkFMlEfCZjohW8l0gcA" name="PRODUCT" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tY4bpVMlEfCZjohW8l0gcA _tY4bp1MlEfCZjohW8l0gcA _tY4bqlMlEfCZjohW8l0gcA _tY3NfFMlEfCZjohW8l0gcA _tY4brVMlEfCZjohW8l0gcA _tY4br1MlEfCZjohW8l0gcA _tY4bsVMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bkVMlEfCZjohW8l0gcA" name="PID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4bklMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tY4bk1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY4blFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4blVMlEfCZjohW8l0gcA" name="NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4bllMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_tY4bl1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY4bmFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bmVMlEfCZjohW8l0gcA" name="PRICE">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY4bmlMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bm1MlEfCZjohW8l0gcA" name="PROMOPRICE">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY4bnFMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="30" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bnVMlEfCZjohW8l0gcA" name="PROMOSTART">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY4bnlMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bn1MlEfCZjohW8l0gcA" name="PROMOEND">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY4boFMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4boVMlEfCZjohW8l0gcA" name="DESCRIPTION">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tY4bolMlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY4bo1MlEfCZjohW8l0gcA" name="PK_PRODUCT" members="_tY4bkVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY4bpFMlEfCZjohW8l0gcA" targetEnd="_tY4bpVMlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tY4bpVMlEfCZjohW8l0gcA" name="PK_PRODUCT" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY4bkFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4bplMlEfCZjohW8l0gcA" column="_tY4bkVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4bp1MlEfCZjohW8l0gcA" name="PROD_DETAIL_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/product/description/detail" asSQLDataTypeHashed="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4bqFMlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4bqVMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="0"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4bqlMlEfCZjohW8l0gcA" name="PROD_NAME_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/product/description/name" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4bq1MlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4brFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4brVMlEfCZjohW8l0gcA" name="SQL250424091350000" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4brlMlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4br1MlEfCZjohW8l0gcA" name="SQL250424091350630" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4bsFMlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4bsVMlEfCZjohW8l0gcA" name="SQL250424091350640" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY4bkFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4bslMlEfCZjohW8l0gcA" column="_tY4boVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY4bs1MlEfCZjohW8l0gcA" name="SQL250424091350560" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY4btlMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY4btFMlEfCZjohW8l0gcA" column="_tY4bt1MlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tY4btVMlEfCZjohW8l0gcA" column="_tY4bu1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY4btlMlEfCZjohW8l0gcA" name="PRODUCTSUPPLIER" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tY4bs1MlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bt1MlEfCZjohW8l0gcA" name="PID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4buFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tY4buVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY4bulMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY4bu1MlEfCZjohW8l0gcA" name="SID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY4bvFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tY4bvVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY4bvlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY4bv1MlEfCZjohW8l0gcA" name="PK_PRODUCTSUPPLIER" members="_tY4bt1MlEfCZjohW8l0gcA _tY4bu1MlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY4bwFMlEfCZjohW8l0gcA" targetEnd="_tY4bs1MlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tY6QwFMlEfCZjohW8l0gcA" name="SQL250424091350210" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLREGION" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6QwVMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6QwlMlEfCZjohW8l0gcA" name="PK_PURCHASEORDER" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Qw1MlEfCZjohW8l0gcA" column="_tYvSHVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6QxFMlEfCZjohW8l0gcA" name="PO_CID_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/PurchaseOrder/@Cid" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6QxVMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_tY6QxlMlEfCZjohW8l0gcA" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Qx1MlEfCZjohW8l0gcA" name="PO_PRODS_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/PurchaseOrder/itemlist/item/product/@pid" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6QyFMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_tY6QyVMlEfCZjohW8l0gcA" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6QylMlEfCZjohW8l0gcA" name="PO_ZIP_XMLIDX" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_LOGICAL" reverseScan="true" notPartitioned="true" xmlPattern="/PurchaseOrder/customerAdr/addr/pcode-zip" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Qy1MlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+    <asSQLDataType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6QzFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="16"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6QzVMlEfCZjohW8l0gcA" name="SQL250424091350220" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6QzlMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Qz1MlEfCZjohW8l0gcA" name="SQL250424091350650" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q0FMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Q0VMlEfCZjohW8l0gcA" name="SQL250424091350670" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q0lMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Q01MlEfCZjohW8l0gcA" name="SQL250424091350680" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tYvSHFMlEfCZjohW8l0gcA" indexType="XMLCOLUMN_PHYSICAL" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q1FMlEfCZjohW8l0gcA" column="_tYvSJ1MlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Q1VMlEfCZjohW8l0gcA" name="SQL250424091350400" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" systemGenerated="true" table="_tY6Q11MlEfCZjohW8l0gcA" indexType="XMLREGION" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q1lMlEfCZjohW8l0gcA" column="_tY6Q3FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY6Q11MlEfCZjohW8l0gcA" name="SUPPLIERS" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tY6Q4FMlEfCZjohW8l0gcA _tY6Q1VMlEfCZjohW8l0gcA _tY6Q4lMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q2FMlEfCZjohW8l0gcA" name="SID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q2VMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tY6Q2lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q21MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q3FMlEfCZjohW8l0gcA" name="ADDR">
+      <containedType xsi:type="SQLDataTypes:XMLDataType" xmi:id="_tY6Q3VMlEfCZjohW8l0gcA" name="XML" primitiveType="XML_TYPE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY6Q3lMlEfCZjohW8l0gcA" name="PK_PRODUCTSUPPLIER" members="_tY6Q2FMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY6Q31MlEfCZjohW8l0gcA" targetEnd="_tY6Q4FMlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tY6Q4FMlEfCZjohW8l0gcA" name="PK_PRODUCTSUPPLIER" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY6Q11MlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q4VMlEfCZjohW8l0gcA" column="_tY6Q2FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6Q4lMlEfCZjohW8l0gcA" name="SQL250424091350460" Schema="_tYvR9FMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY6Q11MlEfCZjohW8l0gcA" indexType="XMLPATH" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q41MlEfCZjohW8l0gcA" column="_tY6Q3FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <SQLAccessControl:User xmi:id="_tY6Q5FMlEfCZjohW8l0gcA" name="SYSIBM" ownedSchema="_tYvRoFMlEfCZjohW8l0gcA _tYvR9FMlEfCZjohW8l0gcA"/>
+  <LUW:LUWIndex xmi:id="_tY6Q5VMlEfCZjohW8l0gcA" name="PK_DEPARTMENT" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY6Q51MlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6Q5lMlEfCZjohW8l0gcA" column="_tY6Q6FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY6Q51MlEfCZjohW8l0gcA" name="DEPARTMENT" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tY6Q5VMlEfCZjohW8l0gcA _tY6RDFMlEfCZjohW8l0gcA _tY6RDlMlEfCZjohW8l0gcA" referencingForeignKeys="_tY6RBVMlEfCZjohW8l0gcA _tY6RQlMlEfCZjohW8l0gcA _tY6RZlMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q6FMlEfCZjohW8l0gcA" name="DEPTNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q6VMlEfCZjohW8l0gcA" name="CHAR" length="3">
+        <eAnnotations xmi:id="_tY6Q6lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q61MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q7FMlEfCZjohW8l0gcA" name="DEPTNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q7VMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="36">
+        <eAnnotations xmi:id="_tY6Q7lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q71MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q8FMlEfCZjohW8l0gcA" name="MGRNO">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q8VMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tY6Q8lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q81MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q9FMlEfCZjohW8l0gcA" name="ADMRDEPT" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q9VMlEfCZjohW8l0gcA" name="CHAR" length="3">
+        <eAnnotations xmi:id="_tY6Q9lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q91MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6Q-FMlEfCZjohW8l0gcA" name="LOCATION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6Q-VMlEfCZjohW8l0gcA" name="CHAR" length="16">
+        <eAnnotations xmi:id="_tY6Q-lMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6Q-1MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY6Q_FMlEfCZjohW8l0gcA" name="PK_DEPARTMENT" members="_tY6Q6FMlEfCZjohW8l0gcA" ForeignKey="_tY6RBVMlEfCZjohW8l0gcA _tY6RQlMlEfCZjohW8l0gcA _tY6RZlMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY6Q_VMlEfCZjohW8l0gcA" targetEnd="_tY6Q5VMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6Q_lMlEfCZjohW8l0gcA" name="RDE" members="_tY6Q8FMlEfCZjohW8l0gcA" onDelete="SET_NULL" uniqueConstraint="_tY6RPVMlEfCZjohW8l0gcA" referencedTable="_tY6REFMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6Q_1MlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6RAFMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6RAVMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6RAlMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6RA1MlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6RBFMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6RBVMlEfCZjohW8l0gcA" name="ROD" members="_tY6Q9FMlEfCZjohW8l0gcA" onDelete="CASCADE" uniqueConstraint="_tY6Q_FMlEfCZjohW8l0gcA" referencedTable="_tY6Q51MlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6RBlMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6RB1MlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6RCFMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6RCVMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6RClMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6RC1MlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tY6RDFMlEfCZjohW8l0gcA" name="XDEPT2" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY6Q51MlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6RDVMlEfCZjohW8l0gcA" column="_tY6Q8FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tY6RDlMlEfCZjohW8l0gcA" name="XDEPT3" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY6Q51MlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tY6RD1MlEfCZjohW8l0gcA" column="_tY6Q9FMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tY6REFMlEfCZjohW8l0gcA" name="EMPLOYEE" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZBllFMlEfCZjohW8l0gcA _tZBlllMlEfCZjohW8l0gcA" referencingForeignKeys="_tY6Q_lMlEfCZjohW8l0gcA _tZBljVMlEfCZjohW8l0gcA _tZCzr1MlEfCZjohW8l0gcA _tY6RbVMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6REVMlEfCZjohW8l0gcA" name="EMPNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RElMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tY6RE1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RFFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RFVMlEfCZjohW8l0gcA" name="FIRSTNME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RFlMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="12">
+        <eAnnotations xmi:id="_tY6RF1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RGFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RGVMlEfCZjohW8l0gcA" name="MIDINIT">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RGlMlEfCZjohW8l0gcA" name="CHAR">
+        <eAnnotations xmi:id="_tY6RG1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RHFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RHVMlEfCZjohW8l0gcA" name="LASTNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RHlMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15">
+        <eAnnotations xmi:id="_tY6RH1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RIFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RIVMlEfCZjohW8l0gcA" name="WORKDEPT">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RIlMlEfCZjohW8l0gcA" name="CHAR" length="3">
+        <eAnnotations xmi:id="_tY6RI1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RJFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RJVMlEfCZjohW8l0gcA" name="PHONENO">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RJlMlEfCZjohW8l0gcA" name="CHAR" length="4">
+        <eAnnotations xmi:id="_tY6RJ1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RKFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RKVMlEfCZjohW8l0gcA" name="HIREDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY6RKlMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RK1MlEfCZjohW8l0gcA" name="JOB">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RLFMlEfCZjohW8l0gcA" name="CHAR" length="8">
+        <eAnnotations xmi:id="_tY6RLVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RLlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RL1MlEfCZjohW8l0gcA" name="EDLEVEL" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tY6RMFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RMVMlEfCZjohW8l0gcA" name="SEX">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RMlMlEfCZjohW8l0gcA" name="CHAR">
+        <eAnnotations xmi:id="_tY6RM1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RNFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RNVMlEfCZjohW8l0gcA" name="BIRTHDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY6RNlMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RN1MlEfCZjohW8l0gcA" name="SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY6ROFMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="9" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6ROVMlEfCZjohW8l0gcA" name="BONUS">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY6ROlMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="9" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RO1MlEfCZjohW8l0gcA" name="COMM">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY6RPFMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="9" scale="2"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY6RPVMlEfCZjohW8l0gcA" name="PK_EMPLOYEE" members="_tY6REVMlEfCZjohW8l0gcA" ForeignKey="_tY6Q_lMlEfCZjohW8l0gcA _tZBljVMlEfCZjohW8l0gcA _tZCzr1MlEfCZjohW8l0gcA _tY6RbVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY6RPlMlEfCZjohW8l0gcA" targetEnd="_tZBllFMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_tY6RP1MlEfCZjohW8l0gcA" name="NUMBER">
+      <dependencies xmi:id="_tY6RQFMlEfCZjohW8l0gcA" targetEnd="_tY6RJVMlEfCZjohW8l0gcA"/>
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_tY6RQVMlEfCZjohW8l0gcA" SQL="PHONENO >= '0000' AND PHONENO &lt;= '9999'"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6RQlMlEfCZjohW8l0gcA" name="RED" members="_tY6RIVMlEfCZjohW8l0gcA" onDelete="SET_NULL" uniqueConstraint="_tY6Q_FMlEfCZjohW8l0gcA" referencedTable="_tY6Q51MlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6RQ1MlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6RRFMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6RRVMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6RRlMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6RR1MlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6RSFMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tY6RSVMlEfCZjohW8l0gcA" name="PROJECT" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZFP4FMlEfCZjohW8l0gcA _tZFP4lMlEfCZjohW8l0gcA" referencingForeignKeys="_tZDa2FMlEfCZjohW8l0gcA _tY6RdFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RSlMlEfCZjohW8l0gcA" name="PROJNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RS1MlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tY6RTFMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RTVMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RTlMlEfCZjohW8l0gcA" name="PROJNAME" nullable="false" defaultValue="''">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RT1MlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="24">
+        <eAnnotations xmi:id="_tY6RUFMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RUVMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RUlMlEfCZjohW8l0gcA" name="DEPTNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RU1MlEfCZjohW8l0gcA" name="CHAR" length="3">
+        <eAnnotations xmi:id="_tY6RVFMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RVVMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RVlMlEfCZjohW8l0gcA" name="RESPEMP" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RV1MlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tY6RWFMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RWVMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RWlMlEfCZjohW8l0gcA" name="PRSTAFF">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tY6RW1MlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="5" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RXFMlEfCZjohW8l0gcA" name="PRSTDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY6RXVMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RXlMlEfCZjohW8l0gcA" name="PRENDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tY6RX1MlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tY6RYFMlEfCZjohW8l0gcA" name="MAJPROJ">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tY6RYVMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tY6RYlMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tY6RY1MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tY6RZFMlEfCZjohW8l0gcA" name="PK_PROJECT" members="_tY6RSlMlEfCZjohW8l0gcA" ForeignKey="_tZDa2FMlEfCZjohW8l0gcA _tY6RdFMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tY6RZVMlEfCZjohW8l0gcA" targetEnd="_tZFP4FMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6RZlMlEfCZjohW8l0gcA" name="FK_PROJECT_1" members="_tY6RUlMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tY6Q_FMlEfCZjohW8l0gcA" referencedTable="_tY6Q51MlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6RZ1MlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6RaFMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6RaVMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6RalMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6Ra1MlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6RbFMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6RbVMlEfCZjohW8l0gcA" name="FK_PROJECT_2" members="_tY6RVlMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tY6RPVMlEfCZjohW8l0gcA" referencedTable="_tY6REFMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6RblMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6Rb1MlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6RcFMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6RcVMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6RclMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6Rc1MlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tY6RdFMlEfCZjohW8l0gcA" name="RPP" members="_tY6RYFMlEfCZjohW8l0gcA" onDelete="CASCADE" uniqueConstraint="_tY6RZFMlEfCZjohW8l0gcA" referencedTable="_tY6RSVMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tY6RdVMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tY6RdlMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tY6Rd1MlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tY6ReFMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tY6ReVMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tY6RelMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZBlgFMlEfCZjohW8l0gcA" name="EMP_PHOTO" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZDasFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZBlgVMlEfCZjohW8l0gcA" name="EMPNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZBlglMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tZBlg1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZBlhFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZBlhVMlEfCZjohW8l0gcA" name="PHOTO_FORMAT" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZBlhlMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tZBlh1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZBliFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZBliVMlEfCZjohW8l0gcA" name="PICTURE" inlineLength="140">
+      <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_tZBlilMlEfCZjohW8l0gcA" name="BLOB" primitiveType="BINARY_LARGE_OBJECT" length="102400"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tZBli1MlEfCZjohW8l0gcA" name="PK_EMP_PHOTO" members="_tZBlgVMlEfCZjohW8l0gcA _tZBlhVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tZBljFMlEfCZjohW8l0gcA" targetEnd="_tZDasFMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tZBljVMlEfCZjohW8l0gcA" name="FK_EMP_PHOTO" members="_tZBlgVMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tY6RPVMlEfCZjohW8l0gcA" referencedTable="_tY6REFMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tZBljlMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tZBlj1MlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_tZBlkFMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tZBlkVMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tZBlklMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tZBlk1MlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tZBllFMlEfCZjohW8l0gcA" name="PK_EMPLOYEE" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY6REFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZBllVMlEfCZjohW8l0gcA" column="_tY6REVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tZBlllMlEfCZjohW8l0gcA" name="XEMP2" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY6REFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZBll1MlEfCZjohW8l0gcA" column="_tY6RIVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tZCzoFMlEfCZjohW8l0gcA" name="EMP_RESUME" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZDas1MlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZCzoVMlEfCZjohW8l0gcA" name="EMPNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZCzolMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tZCzo1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZCzpFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZCzpVMlEfCZjohW8l0gcA" name="RESUME_FORMAT" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZCzplMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tZCzp1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZCzqFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZCzqVMlEfCZjohW8l0gcA" name="RESUME" inlineLength="92">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZCzqlMlEfCZjohW8l0gcA" name="CLOB" primitiveType="CHARACTER_LARGE_OBJECT" length="5120">
+        <eAnnotations xmi:id="_tZCzq1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZCzrFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tZCzrVMlEfCZjohW8l0gcA" name="PK_EMP_RESUME" members="_tZCzoVMlEfCZjohW8l0gcA _tZCzpVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tZCzrlMlEfCZjohW8l0gcA" targetEnd="_tZDas1MlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tZCzr1MlEfCZjohW8l0gcA" name="FK_EMP_RESUME" members="_tZCzoVMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tY6RPVMlEfCZjohW8l0gcA" referencedTable="_tY6REFMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tZCzsFMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tZCzsVMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_tZCzslMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tZCzs1MlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tZCztFMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tZCztVMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tZDasFMlEfCZjohW8l0gcA" name="PK_EMP_PHOTO" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tZBlgFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZDasVMlEfCZjohW8l0gcA" column="_tZBlgVMlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tZDaslMlEfCZjohW8l0gcA" column="_tZBlhVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tZDas1MlEfCZjohW8l0gcA" name="PK_EMP_RESUME" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tZCzoFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZDatFMlEfCZjohW8l0gcA" column="_tZCzoVMlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tZDatVMlEfCZjohW8l0gcA" column="_tZCzpVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tZDatlMlEfCZjohW8l0gcA" name="PK_INVENTORY" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tZDauFMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZDat1MlEfCZjohW8l0gcA" column="_tZDauVMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tZDauFMlEfCZjohW8l0gcA" name="INVENTORY" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZDatlMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDauVMlEfCZjohW8l0gcA" name="PID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZDaulMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tZDau1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZDavFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDavVMlEfCZjohW8l0gcA" name="QUANTITY">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZDavlMlEfCZjohW8l0gcA" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDav1MlEfCZjohW8l0gcA" name="LOCATION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZDawFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128">
+        <eAnnotations xmi:id="_tZDawVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZDawlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tZDaw1MlEfCZjohW8l0gcA" name="PK_INVENTORY" members="_tZDauVMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tZDaxFMlEfCZjohW8l0gcA" targetEnd="_tZDatlMlEfCZjohW8l0gcA"/>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tZDaxVMlEfCZjohW8l0gcA" name="PK_PROJACT" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tZDayVMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZDaxlMlEfCZjohW8l0gcA" column="_tZDaylMlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tZDax1MlEfCZjohW8l0gcA" column="_tZDazlMlEfCZjohW8l0gcA"/>
+    <members xmi:id="_tZDayFMlEfCZjohW8l0gcA" column="_tZDa0lMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tZDayVMlEfCZjohW8l0gcA" name="PROJACT" schema="_tYvRoFMlEfCZjohW8l0gcA" index="_tZDaxVMlEfCZjohW8l0gcA" referencingForeignKeys="_tZEo4VMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDaylMlEfCZjohW8l0gcA" name="PROJNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZDay1MlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tZDazFMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZDazVMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDazlMlEfCZjohW8l0gcA" name="ACTNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZDaz1MlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDa0FMlEfCZjohW8l0gcA" name="ACSTAFF">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tZDa0VMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="5" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDa0lMlEfCZjohW8l0gcA" name="ACSTDATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tZDa01MlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZDa1FMlEfCZjohW8l0gcA" name="ACENDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tZDa1VMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_tZDa1lMlEfCZjohW8l0gcA" name="PK_PROJACT" members="_tZDaylMlEfCZjohW8l0gcA _tZDazlMlEfCZjohW8l0gcA _tZDa0lMlEfCZjohW8l0gcA" ForeignKey="_tZEo4VMlEfCZjohW8l0gcA">
+      <dependencies xmi:id="_tZDa11MlEfCZjohW8l0gcA" targetEnd="_tZDaxVMlEfCZjohW8l0gcA"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tZDa2FMlEfCZjohW8l0gcA" name="RPAP" members="_tZDaylMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tY6RZFMlEfCZjohW8l0gcA" referencedTable="_tY6RSVMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tZDa2VMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tZDa2lMlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_tZDa21MlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tZDa3FMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tZDa3VMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tZDa3lMlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZEo0FMlEfCZjohW8l0gcA" name="EMPPROJACT" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo0VMlEfCZjohW8l0gcA" name="EMPNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZEo0lMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tZEo01MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZEo1FMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo1VMlEfCZjohW8l0gcA" name="PROJNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZEo1lMlEfCZjohW8l0gcA" name="CHAR" length="6">
+        <eAnnotations xmi:id="_tZEo11MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZEo2FMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo2VMlEfCZjohW8l0gcA" name="ACTNO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZEo2lMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo21MlEfCZjohW8l0gcA" name="EMPTIME">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tZEo3FMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="5" scale="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo3VMlEfCZjohW8l0gcA" name="EMSTDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tZEo3lMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZEo31MlEfCZjohW8l0gcA" name="EMENDATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tZEo4FMlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_tZEo4VMlEfCZjohW8l0gcA" name="REPAPA" members="_tZEo1VMlEfCZjohW8l0gcA _tZEo2VMlEfCZjohW8l0gcA _tZEo3VMlEfCZjohW8l0gcA" onDelete="RESTRICT" uniqueConstraint="_tZDa1lMlEfCZjohW8l0gcA" referencedTable="_tZDayVMlEfCZjohW8l0gcA">
+      <eAnnotations xmi:id="_tZEo4lMlEfCZjohW8l0gcA" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_tZEo41MlEfCZjohW8l0gcA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_tZEo5FMlEfCZjohW8l0gcA" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_tZEo5VMlEfCZjohW8l0gcA" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_tZEo5lMlEfCZjohW8l0gcA" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_tZEo51MlEfCZjohW8l0gcA" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWIndex xmi:id="_tZFP4FMlEfCZjohW8l0gcA" name="PK_PROJECT" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" unique="true" systemGenerated="true" table="_tY6RSVMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" systemRequired="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZFP4VMlEfCZjohW8l0gcA" column="_tY6RSlMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_tZFP4lMlEfCZjohW8l0gcA" name="XPROJ2" Schema="_tYvRoFMlEfCZjohW8l0gcA" fillFactor="10" table="_tY6RSVMlEfCZjohW8l0gcA" reverseScan="true" notPartitioned="true" collectStats="false" sampledStats="false" detailedStats="false">
+    <members xmi:id="_tZFP41MlEfCZjohW8l0gcA" column="_tY6RVlMlEfCZjohW8l0gcA"/>
+  </LUW:LUWIndex>
+  <LUW:LUWTable xmi:id="_tZFP5FMlEfCZjohW8l0gcA" name="CL_SCHED" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP5VMlEfCZjohW8l0gcA" name="CLASS_CODE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZFP5lMlEfCZjohW8l0gcA" name="CHAR" length="7">
+        <eAnnotations xmi:id="_tZFP51MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZFP6FMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP6VMlEfCZjohW8l0gcA" name="DAY">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZFP6lMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP61MlEfCZjohW8l0gcA" name="STARTING">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_tZFP7FMlEfCZjohW8l0gcA" name="TIME" primitiveType="TIME"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP7VMlEfCZjohW8l0gcA" name="ENDING">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_tZFP7lMlEfCZjohW8l0gcA" name="TIME" primitiveType="TIME"/>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZFP71MlEfCZjohW8l0gcA" name="IN_TRAY" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP8FMlEfCZjohW8l0gcA" name="RECEIVED">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_tZFP8VMlEfCZjohW8l0gcA" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP8lMlEfCZjohW8l0gcA" name="SOURCE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZFP81MlEfCZjohW8l0gcA" name="CHAR" length="8">
+        <eAnnotations xmi:id="_tZFP9FMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZFP9VMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP9lMlEfCZjohW8l0gcA" name="SUBJECT">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZFP91MlEfCZjohW8l0gcA" name="CHAR" length="64">
+        <eAnnotations xmi:id="_tZFP-FMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZFP-VMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZFP-lMlEfCZjohW8l0gcA" name="NOTE_TEXT">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZFP-1MlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="3000">
+        <eAnnotations xmi:id="_tZFP_FMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZFP_VMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZGeAFMlEfCZjohW8l0gcA" name="ORG" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeAVMlEfCZjohW8l0gcA" name="DEPTNUMB" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeAlMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeA1MlEfCZjohW8l0gcA" name="DEPTNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeBFMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="14">
+        <eAnnotations xmi:id="_tZGeBVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeBlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeB1MlEfCZjohW8l0gcA" name="MANAGER">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeCFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeCVMlEfCZjohW8l0gcA" name="DIVISION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeClMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_tZGeC1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeDFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeDVMlEfCZjohW8l0gcA" name="LOCATION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeDlMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="13">
+        <eAnnotations xmi:id="_tZGeD1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeEFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZGeEVMlEfCZjohW8l0gcA" name="SALES" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeElMlEfCZjohW8l0gcA" name="SALES_DATE">
+      <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_tZGeE1MlEfCZjohW8l0gcA" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeFFMlEfCZjohW8l0gcA" name="SALES_PERSON">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeFVMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15">
+        <eAnnotations xmi:id="_tZGeFlMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeF1MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeGFMlEfCZjohW8l0gcA" name="REGION">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeGVMlEfCZjohW8l0gcA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15">
+        <eAnnotations xmi:id="_tZGeGlMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeG1MlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeHFMlEfCZjohW8l0gcA" name="SALES">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeHVMlEfCZjohW8l0gcA" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_tZGeHlMlEfCZjohW8l0gcA" name="STAFFG" schema="_tYvRoFMlEfCZjohW8l0gcA" organizeBy="ROW" rowCompressionEmpty="false" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeH1MlEfCZjohW8l0gcA" name="ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeIFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeIVMlEfCZjohW8l0gcA" name="NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeIlMlEfCZjohW8l0gcA" name="VARGRAPHIC" primitiveType="NATIONAL_CHARACTER_VARYING" length="9">
+        <eAnnotations xmi:id="_tZGeI1MlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeJFMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="CODEUNITS16"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeJVMlEfCZjohW8l0gcA" name="DEPT">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeJlMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeJ1MlEfCZjohW8l0gcA" name="JOB">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_tZGeKFMlEfCZjohW8l0gcA" name="GRAPHIC" primitiveType="NATIONAL_CHARACTER" length="5">
+        <eAnnotations xmi:id="_tZGeKVMlEfCZjohW8l0gcA" source="LENGTH_SEMANTIC">
+          <details xmi:id="_tZGeKlMlEfCZjohW8l0gcA" key="LENGTH_SEMANTIC_TYPE" value="CODEUNITS16"/>
+        </eAnnotations>
+      </containedType>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeK1MlEfCZjohW8l0gcA" name="YEARS">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZGeLFMlEfCZjohW8l0gcA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeLVMlEfCZjohW8l0gcA" name="SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tZGeLlMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="9"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_tZGeL1MlEfCZjohW8l0gcA" name="COMM">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_tZGeMFMlEfCZjohW8l0gcA" name="DECIMAL" primitiveType="DECIMAL" precision="9"/>
+    </columns>
+  </LUW:LUWTable>
+  <SQLSchema:Sequence xmi:id="_tZHsIFMlEfCZjohW8l0gcA" name="SAMPSEQUENCE" schema="_tYvRoFMlEfCZjohW8l0gcA">
+    <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_tZHsIVMlEfCZjohW8l0gcA" name="BIGINT" primitiveType="BIGINT"/>
+    <identity xsi:type="DB2Model:DB2IdentitySpecifier" xmi:id="_tZHsIlMlEfCZjohW8l0gcA" generationType="ALWAYS_GENERATED" startValue="1" increment="1" minimum="1" maximum="9223372036854775807"/>
+  </SQLSchema:Sequence>
+</xmi:XMI>

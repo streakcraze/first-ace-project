@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <MQInputMessage timestamp="1751015306350" nodeId="FCMComposite_1_1" name="new message 1" id="1751015306348-7">
+        <plainText>2Ed++++++++Fletcher++Mail+Point+135++++++Hursley+Park++++++++WinchesterSO21+2JN++UKDelivery++XYZ123ABC+I+placed+an+order+on+15-11-99%2C+well+in+time+for+Christmas+and+I+still+have+not+had+a+delivery+schedule+sent+to+me.++Please+cancel+the+order+and+refund+me+NOW.+++++++++++++++++++++++++++++++++++++++++X</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+</MessagePool>
