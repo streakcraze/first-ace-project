@@ -8,7 +8,6 @@ It supports **COBOL** and **XML** message formats via data models defined in a s
 
 ## 📂 Project Structure
 
-
 ├── RouteComplaint/           # Main application with message flow and library references  
 │  
 ├── ComplaintDataModels/      # Shared library with DFDL schema (from COBOL Copybook) and XML schema model  
